@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Endernode control panel</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+	<a href="#" title="Show navigation" data-action="toggle-close" data-target="#mainnav" class="pull-left project-name"><em class="fa fa-bars"></em> Endernode</a>
+	<a href="#" title="Show all servers" data-action="toggle-close" data-target="#serverlist" class="pull-right"><em class="fa fa-tasks"></em></a>
+</div>
+
+<div id="mainnav" class="sidebar nav closed">
+	<span class="title"><em class="fa fa-facebook-square"></em> Test user</span>
+	<center><a href="">Instructions</a> - <a href="">Log out</a></center>
+
+	<ul>
+		<li><label>Testserver</label></li>
+		<li class="active"><a href=""><em class="fa fa-dashboard"></em> Dashboard</a></li>
+		<li><a href=""><em class="fa fa-user"></em> Staff <div class="label label-success pull-right">30</div></a></li>
+		<li><a href=""><em class="fa fa-tasks"></em> Tickets <div class="label label-success pull-right">30</div></a></li>
+	</ul>
+</div>
+
+<div class="content">
+	<div class="ticket-wrapper">
+		<div class="ticket-title"><p>Out of coffee!</p></div>
+
+			<div class="ticket-message ticket-message-user">
+				<div class="ticket-message-top">			
+					<p><strong>Jimmy Antonio - <i>Office Minecraft Administrator</strong></i></p>
+					<p><i>5 minutes ago</i></p>
+				</div>
+				<hr>
+				<div class="ticket-message-bottom">
+					<p>Dear endernode, <br> <br> <br>We lost coffee on department C! <br> <br> Hank just went to get some coffee for us all but we could only get one more cup till the whole thing was empty! <br> <br> <br>Please respond as soon as possible!<br> <br> - Jimmy
+					</p>
+				</div>
+			</div>
+
+			<div class="ticket-message">
+				<div class="ticket-message ticket-message-agent">
+					<div class="ticket-message-top">
+						<p><strong>Dwayne Hulsman - <i>Endernode</i></strong></p>
+						<p><i>5 minutes ago</i></p>
+					</div>
+					<hr>
+					<div class="ticket-message-bottom">	
+						<p>Hello Jimmy Antonio, <br> <br> <br> We'll send Harry to refill immediatly, he will also bring some beloved biscuits! <br> <br> <br> Dwayne Hulsman <br><i>EnderNode</i></p></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="serverlist" class="sidebar checklist">
+	<span class="title">Servers</span>
+
+	<p><small>This list contains every server where you are a staff member.
+	Selected servers will appear in the navigation on the left.
+	Some sections may be missing when you do not have the right permission.</small></p>
+
+	<p><input type="text" placeholder="Search..." class="search"></p>
+
+	<ul>
+		<li class="odd"><label><input type="checkbox"> Testserver</label></li>
+		<li class="even"><label><input type="checkbox"> Testserver</label></li>
+	</ul>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
